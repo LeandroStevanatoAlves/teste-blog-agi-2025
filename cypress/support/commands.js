@@ -24,6 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 Cypress.Commands.add('Search', (keyword) => {
-    cy.get('.ast-icon > .ahfb-svg-iconset').click()
-    cy.get('#search-field').type(`${String(keyword)}{enter}`)
+    cy.get('.ast-icon > .ahfb-svg-iconset').click({force: true})
+    cy.get('#search-field').type(`${String(keyword)}{enter}`, { force: true })
 });
