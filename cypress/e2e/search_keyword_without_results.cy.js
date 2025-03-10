@@ -1,6 +1,6 @@
 import { BASE_URL, KEYWORD_WITHOUT_RESULT } from "../constants/constants"
 
-describe('template spec', () => {
+describe('Search for a keyword that returns no results', () => {
   it('passes', () => {
     cy.visit(BASE_URL)
     cy.Search(KEYWORD_WITHOUT_RESULT)

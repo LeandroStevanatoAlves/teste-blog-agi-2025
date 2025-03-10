@@ -1,6 +1,6 @@
 import { BASE_URL, KEYWORD_WITH_RESULT } from "../constants/constants"
 
-describe('template spec', () => {
+describe('Search for a keyword that returns results', () => {
   it('passes', () => {
     cy.visit(BASE_URL)
     cy.Search(KEYWORD_WITH_RESULT)
