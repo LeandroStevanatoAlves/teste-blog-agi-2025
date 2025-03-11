@@ -47,9 +47,10 @@ Para executar os testes sem interface gráfica:
 npx cypress run
 ```
 
-## 🎯 Cenários Automatizados
-1️⃣ **Pesquisa válida**: Verifica se a pesquisa retorna artigos relacionados ao termo pesquisado.
-2️⃣ **Pesquisa vazia**: Testa o comportamento do sistema ao realizar uma busca sem informar um termo.
+## 🎯 Cenários de teste
+### 1️⃣ **Pesquisa válida**: Verifica se a pesquisa retorna artigos relacionados a palavra-chave pesquisada.
+### 2️⃣ **Pesquisa inválida**: Verifica o comportamento quando uma palavra-chave não retorna nenhum artigo.
+### 3️⃣ **Pesquisa vazia**: Testa o comportamento do sistema ao realizar uma busca sem informar uma palavra-chave.
 
 ## 🛠️ CI/CD
 O projeto pode ser configurado para rodar testes automaticamente em pipelines como GitHub Actions ou Jenkins.
